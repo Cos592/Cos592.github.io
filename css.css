@@ -17,12 +17,12 @@ h1 {
     border-radius: 45px;
     width:fit-content;
     transition: 0.5s;
-    width: 380px;
+    width: 350px;
 }
 
 #floppa:hover {
     box-shadow: 5px 5px 15px 5px grey;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 #username {
@@ -50,13 +50,13 @@ body {
 }
 
 footer {
-    position:absolute;
     bottom:0px;
     width: 100%;
 }
 
 #imagetext {
     min-width: 200px;
+    max-height: 350px;
 }
 
 #navtitle {
@@ -65,4 +65,8 @@ footer {
 
 li {
     margin-top: 3px;
+}
+
+header {
+    width: 100%;
 }
