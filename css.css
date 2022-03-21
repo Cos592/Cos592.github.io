@@ -15,19 +15,23 @@ h1 {
 
 #floppa {
     border-radius: 45px;
-    width: min-content;
+    width:fit-content;
     transition: 0.5s;
 }
 
 #floppa:hover {
     box-shadow: 5px 5px 15px 5px grey;
+    transform: scale(1.05);
 }
 
 #username {
+    text-decoration: none;
     transition: color .2s ease-in;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    
 }
 
 #username:hover {
@@ -36,4 +40,20 @@ h1 {
 
 body {
     text-align: center;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+footer {
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+}
+
+#imagetext {
+    min-width: 200px;
 }
