@@ -17,6 +17,7 @@ h1 {
     border-radius: 45px;
     width:fit-content;
     transition: 0.5s;
+    width: 380px;
 }
 
 #floppa:hover {
@@ -56,4 +57,12 @@ footer {
 
 #imagetext {
     min-width: 200px;
+}
+
+#navtitle {
+    margin-left: 20px;
+}
+
+li {
+    margin-top: 3px;
 }
