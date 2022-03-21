@@ -15,12 +15,23 @@ h1 {
 
 #floppa {
     border-radius: 45px;
+    width: min-content;
+    transition: 0.5s;
+}
+
+#floppa:hover {
+    box-shadow: 5px 5px 15px 5px grey;
 }
 
 #username {
-    font-size:40px;
+    transition: color .2s ease-in;
+    font-size: 40px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#username:hover {
+    color: gold;
 }
 
 body {
