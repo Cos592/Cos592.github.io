@@ -101,6 +101,11 @@ header {
 .smallimg {
     max-width: 300px;
     max-height: 300px;
+    transition: 0.2s;
+}
+
+.smallimg:hover {
+    transform: scale(1.02);
 }
 
 .carousel-control-next-icon {
