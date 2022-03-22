@@ -18,10 +18,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js.js"></script>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="floppa.png" id="smallfloppa"><a class="navbar-brand" href="#"> Cos592</a>
+            <img src="floppa.png" id="smallfloppa"><a class="navbar-brand" id="username" href="#"> Cos592</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,10 +34,13 @@
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="technologies.html">Photography</a>
+                        <a class="nav-link" href="technologies.html">Technologies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Misc.</a>
                     </li>
 
                 </ul>
@@ -47,7 +51,7 @@
 
 
 <body class="d-flex flex-column min-vh-100">
-    <div id="bg">
+    <div class="css-selector" ><!--style="background-image: url('bodybg.jpg');"-->
         <div class="spacer"></div>
         <div class="col text-light">
             <p id="title1">Welcome</p>
@@ -56,11 +60,11 @@
         <div class="container-md">
             <div class=" align-items-center text-light">
                 <div class="col align-self-center">
-                    <p><a id="username" href="https://github.com/Cos592">Cos592</a></p>
+                    <p class="h1"><a id="username" href="https://github.com/Cos592">Cos592</a></p>
                 </div>
                 <div class="spacer"></div>
                 <div class="col align-self-center align-items-center p-2" id="imagetext">
-                    <p id="userdesc">I'm a 19 y/o IT Student that really likes programming, but mostly front-end
+                    <p id="h5">I'm a 19 y/o IT Student that really likes programming, but mostly front-end
                         stuff.<br>
                         I like designing and developing GUI(s) and I'm always on the lookout for new tools/technologies
                         that
@@ -74,6 +78,7 @@
         </div>
         <div class="spacer"></div>
         <div class="spacer"></div>
+        <p class="h2">This Website was made using:</p>
         <div class="spacer"></div>
 
     </div>
@@ -85,18 +90,21 @@
         <div class="carousel-inner justify-content-center">
             <div class="carousel-item active">
                 <div class="col justify-content-center">
-                    <p class="h3">Python</p>
                     <div class="spacer"></div>
-                    <img class="d-block mx-auto smallimg" src="python.png" alt="Second slide">
+                    <img class="d-block mx-auto smallimg" src="css.png" alt="Second slide">
+                    <div class="spacer"></div>
+                    <p class="h3">CSS</p>
+                    <p class="h5">The basis of all web-app design, the building block of all websites.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="col justify-content-center">
-                    <p class="h3">PHP</p>
+                    
                     <div class="spacer"></div>
-                    <img class="d-block mx-auto smallimg" src="php.png" alt="Second slide">
+                    <img class="d-block mx-auto smallimg" src="bstrap.png" alt="Second slide">
                     <div class="spacer"></div>
-                    <p class="h5"></p>
+                    <p class="h3">Bootstrap</p>
+                    <p class="h5">A powerful and popular js and css toolkit that allows me<br> to quickly create responsive web-based applications.</p>
                 </div>
             </div>
         </div>
@@ -123,7 +131,7 @@
             </section>
         </div>
         <div class="text-center p-3 text-dark">
-            © 2022 Copyright: <a class="text-dark" id="" href="https://github.com/Cos592">Cos592</a><br>
+            © 2022 Copyright: <a class="text-dark" id="username" href="https://github.com/Cos592">Cos592</a><br>
         </div>
 
     </footer>

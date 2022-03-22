@@ -30,10 +30,9 @@ h1 {
 #username {
     text-decoration: none;
     transition: color .2s ease-in;
-    font-size: 40px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: beige;
+    color: grey;
 }
 
 #username:hover {
@@ -61,10 +60,6 @@ body {
     100% {opacity: 1;}
 }
 
-footer {
-    bottom:0px;
-    width: 100%;
-}
 
 #imagetext {
     min-width: 200px;
@@ -88,16 +83,20 @@ header {
     margin: 10px;
 }
 
-p {
-    margin-block-end: 0px;
-}
 
 #smallfloppa {
     width: 35px;
     height: 35px;
     margin-right: 10px;
     border-radius: 5px;
+    transition: 0.5s;
 }
+
+#smallfloppa:hover {
+    box-shadow: 2px 2px 5px 2px grey;
+    transform: scale(1.03);
+}
+
 
 .smallimg {
     max-width: 300px;
@@ -110,4 +109,46 @@ p {
 
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-inner {
+    height: 515px;
+}
+
+.item {
+    height: 515px;
+}
+
+
+.carousel {
+    overflow: hidden;
+}
+.carousel-inner {
+    width: 150%;
+    left: -25%;
+}
+
+.css-selector {
+    background: linear-gradient(222deg, #ff7e00, #ffd800, #ff006e, #d000ff);
+    background-size: 800% 800%;
+
+    -webkit-animation: CoolBG 21s ease infinite;
+    -moz-animation: CoolBG 21s ease infinite;
+    animation: CoolBG 21s ease infinite;
+}
+
+@-webkit-keyframes CoolBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes CoolBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes CoolBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
