@@ -163,8 +163,10 @@ header {
     height: 20px;
     margin: 5px;
     transition: 0.2s;
+    transform: scale(1.4);
+    color: gray;
 }
 
 .socials:hover {
-    transform: scale(1.2);
+    transform: scale(1.6);
 }
