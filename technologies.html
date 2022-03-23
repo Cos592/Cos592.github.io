@@ -19,6 +19,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js.js"></script>
+    <script src="https://kit.fontawesome.com/5344cb912c.js" crossorigin="anonymous"></script>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,7 +35,7 @@
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="technologies.html">Technologies</a>
+                        <a class="nav-link" href="#">Technologies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Photography</a>
@@ -51,29 +52,76 @@
 
 
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 justify-content-center">
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <p class="h1">My knowledge</p>
+    <div class="spacer"></div>
+    <div class="row p-2 justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top smallimg p-5" src="python.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">A fast and simple language.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalPython"> More... </button>
+            </div>
+          </div>
+
+          <!--<div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>-->
+    </div>
+
 
     <footer class="text-center text-grey mt-auto" style="background-color: rgba(0, 0, 0, 0.1);">
         <div class="container p-4 text-dark">
             <section class="mb-4">
-                <a href="https://github.com/Cos592"><img class="socials"
-                        src="node_modules/bootstrap-icons/icons/github.svg" alt="github"></a>
-                <a href="https://www.instagram.com/cosmin_buzamat/"><img class="socials"
-                        src="node_modules/bootstrap-icons/icons/instagram.svg" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/cosmin-andrei-buzamat-729511192/"><img class="socials"
-                        src="node_modules/bootstrap-icons/icons/linkedin.svg" alt="linkedin"></a>
-                <a href="https://twitter.com/C_os592"><img class="socials"
-                        src="node_modules/bootstrap-icons/icons/twitter.svg" alt="twitter"></a>
+                <a href="https://github.com/Cos592"><i class="fa-brands fa-github socials"></i></a>
+                <a href="https://www.instagram.com/cosmin_buzamat/"><i class="fa-brands fa-instagram socials"></i></a>
+                <a href="https://www.linkedin.com/in/cosmin-andrei-buzamat-729511192/"><i
+                        class="fa-brands fa-linkedin socials"></i></a>
+                <a href="https://twitter.com/C_os592"><i class="fa-brands fa-twitter socials"></i></a>
             </section>
             <section class="mb-4">
                 <p class="h6">Email: cosminbuzamat3@gmail.com</p>
-                <p class="h6"> Phone: +39 3889551510</p>
             </section>
         </div>
         <div class="text-center p-2 text-dark">
             © 2022 Copyright: <a class="text-dark" id="username" href="https://github.com/Cos592">Cos592</a><br>
         </div>
     </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="ModalPython" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Python - My Experience</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
