@@ -170,3 +170,7 @@ header {
 .socials:hover {
     transform: scale(1.6);
 }
+
+p {
+    width: 100%;
+}
