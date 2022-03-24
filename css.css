@@ -46,7 +46,7 @@ body {
 }
 
 #bg {
-    background-image: url("bodybg.jpg");
+    background-image: url("assets/bodybg.jpg");
     image-rendering: crisp-edges;
     background-size: cover;
     background-position: center;
@@ -99,7 +99,6 @@ header {
 
 
 .smallimg {
-    max-width: 300px;
     max-height: 300px;
     transition: 0.2s;
 }
@@ -200,4 +199,67 @@ p {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+button {
+    border-radius: 35px;
+}
+
+.vspacer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pythongrad {
+    background: linear-gradient(157deg, #0066ff00, #f1cd00a9);
+    background-size: 200% 200%;
+
+    -webkit-animation: py 9s ease infinite;
+    -moz-animation: py 9s ease infinite;
+    animation: py 9s ease infinite;
+}
+
+@-webkit-keyframes py {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes py {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes py {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.cssGrad {
+    background: linear-gradient(139deg, #0042ff, #ffffff);
+    background-size: 200% 200%;
+
+    -webkit-animation: cssgrad 18s ease infinite;
+    -moz-animation: cssgrad 18s ease infinite;
+    animation: cssgrad 18s ease infinite;
+}
+
+@-webkit-keyframes cssgrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes cssgrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes cssgrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.card {
+    border-radius: 35px;
 }
