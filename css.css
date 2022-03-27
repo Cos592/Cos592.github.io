@@ -85,10 +85,10 @@ header {
 
 
 #smallfloppa {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.5s;
 }
 
@@ -132,6 +132,62 @@ header {
     left: -25%;
 }
 
+
+
+.socials {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    transition: 0.2s;
+    transform: scale(1.4);
+    color: gray;
+}
+
+.socials:hover {
+    transform: scale(1.6);
+}
+
+p {
+    width: 100%;
+}
+
+
+button {
+    border-radius: 35px;
+}
+
+.vspacer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.scalecards {
+    transition: 0.3s;
+}
+
+.scalecards:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .css-selector {
     background: linear-gradient(185deg, #0011ff, #ffef00);
     background-size: 200% 200%;
@@ -155,23 +211,6 @@ header {
     0%{background-position:27% 0%}
     50%{background-position:74% 100%}
     100%{background-position:27% 0%}
-}
-
-.socials {
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    transition: 0.2s;
-    transform: scale(1.4);
-    color: gray;
-}
-
-.socials:hover {
-    transform: scale(1.6);
-}
-
-p {
-    width: 100%;
 }
 
 .miscbg {
@@ -199,15 +238,6 @@ p {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
-
-button {
-    border-radius: 35px;
-}
-
-.vspacer {
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .pythongrad {
@@ -263,3 +293,263 @@ button {
 .card {
     border-radius: 35px;
 }
+
+.topitem {
+    background: linear-gradient(49deg, #2e638f6b, #79e4c056);
+    background-size: 100% 100%;
+
+    -webkit-animation: darktop 30s ease infinite;
+    -moz-animation: darktop 30s ease infinite;
+    animation: darktop 30s ease infinite;
+}
+
+@-webkit-keyframes darktop {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes darktop {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes darktop {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.noborder {
+    border: 0px;
+}
+
+.bstrapcard {
+    background: linear-gradient(49deg, #a200ff59, #ffffff56);
+    background-size: 100% 100%;
+
+    -webkit-animation: bstrap 30s ease infinite;
+    -moz-animation: bstrap 30s ease infinite;
+    animation: bstrap 30s ease infinite;
+}
+
+@-webkit-keyframes bstrap {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bstrap {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bstrap {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.pycard {
+    background: linear-gradient(72deg, #2997ff59, #fcd60256);
+    background-size: 100% 100%;
+
+    -webkit-animation: pyt 30s ease infinite;
+    -moz-animation: pyt 30s ease infinite;
+    animation: pyt 30s ease infinite;
+}
+
+@-webkit-keyframes pyt {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes pyt {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes pyt {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.phpcard {
+    background: linear-gradient(8deg, #8c67e459, #0000001c);
+    background-size: 100% 100%;
+
+    -webkit-animation: pphp 30s ease infinite;
+    -moz-animation: pphp 30s ease infinite;
+    animation: pphp 30s ease infinite;
+}
+
+@-webkit-keyframes pphp {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes pphp {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes pphp {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.fluttercard {
+    background: linear-gradient(8deg, #0099ff59, #002bb81c);
+    background-size: 100% 100%;
+
+    -webkit-animation: flutt 30s ease infinite;
+    -moz-animation: flutt 30s ease infinite;
+    animation: flutt 30s ease infinite;
+}
+
+@-webkit-keyframes flutt {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes flutt {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes flutt {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.illustratorcard {
+    background: linear-gradient(100deg, #e47a0279, #ffffff1c);
+    background-size: 100% 100%;
+
+    -webkit-animation: ill 30s ease infinite;
+    -moz-animation: ill 30s ease infinite;
+    animation: ill 30s ease infinite;
+}
+
+@-webkit-keyframes ill {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ill {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ill {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.csscard {
+    background: linear-gradient(170deg, #021bf879, #ffffff1c);
+    background-size: 100% 100%;
+
+    -webkit-animation: ccs 30s ease infinite;
+    -moz-animation: ccs 30s ease infinite;
+    animation: ccs 30s ease infinite;
+}
+
+@-webkit-keyframes ccs {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ccs {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ccs {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.javacard {
+    background: linear-gradient(70deg, #021bf879, #ff373763);
+    background-size: 100% 100%;
+
+    -webkit-animation: jav 30s ease infinite;
+    -moz-animation: jav 30s ease infinite;
+    animation: jav 30s ease infinite;
+}
+
+@-webkit-keyframes jav {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes jav {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes jav {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.ccard {
+    background: linear-gradient(70deg, #4b4d5c79, #00000025);
+    background-size: 100% 100%;
+
+    -webkit-animation: carcar 30s ease infinite;
+    -moz-animation: carcar 30s ease infinite;
+    animation: carcar 30s ease infinite;
+}
+
+@-webkit-keyframes carcar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes carcar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes carcar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.dartcard {
+    background: linear-gradient(70deg, #00ffb357, #0167ff50);
+    background-size: 100% 100%;
+
+    -webkit-animation: dar 30s ease infinite;
+    -moz-animation: dar 30s ease infinite;
+    animation: dar 30s ease infinite;
+}
+
+@-webkit-keyframes dar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes dar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes dar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+
+
