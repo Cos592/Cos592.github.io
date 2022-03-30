@@ -32,11 +32,11 @@ h1 {
     transition: color .2s ease-in;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: grey;
+    color: rgb(0, 0, 0);
 }
 
 #username:hover {
-    color: black;
+    color: rgba(0, 0, 0, 0.459);
 }
 
 body {
@@ -93,10 +93,12 @@ header {
 }
 
 #smallfloppa:hover {
-    box-shadow: 2px 2px 5px 2px grey;
     transform: scale(1.03);
 }
 
+.roundedfloppa {
+    border-radius: 20px;
+}
 
 .smallimg {
     max-height: 300px;
@@ -156,6 +158,15 @@ button {
     border-radius: 35px;
 }
 
+.button {
+    border-radius: 35px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
 .vspacer {
     margin-left: 10px;
     margin-right: 10px;
@@ -169,12 +180,13 @@ button {
     transform: scale(1.05);
 }
 
-
-
-
-
-
-
+.notextstyle {
+    text-decoration: none;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
 
 
 
@@ -243,51 +255,11 @@ button {
 .pythongrad {
     background: linear-gradient(157deg, #0066ff00, #f1cd00a9);
     background-size: 200% 200%;
-
-    -webkit-animation: py 9s ease infinite;
-    -moz-animation: py 9s ease infinite;
-    animation: py 9s ease infinite;
-}
-
-@-webkit-keyframes py {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes py {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes py {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .cssGrad {
     background: linear-gradient(139deg, #0042ff, #ffffff);
     background-size: 200% 200%;
-
-    -webkit-animation: cssgrad 18s ease infinite;
-    -moz-animation: cssgrad 18s ease infinite;
-    animation: cssgrad 18s ease infinite;
-}
-
-@-webkit-keyframes cssgrad {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes cssgrad {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes cssgrad {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .card {
@@ -297,27 +269,9 @@ button {
 .topitem {
     background: linear-gradient(49deg, #2e638f6b, #79e4c056);
     background-size: 100% 100%;
-
-    -webkit-animation: darktop 30s ease infinite;
-    -moz-animation: darktop 30s ease infinite;
-    animation: darktop 30s ease infinite;
 }
 
-@-webkit-keyframes darktop {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes darktop {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes darktop {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+
 
 .noborder {
     border: 0px;
@@ -326,228 +280,74 @@ button {
 .bstrapcard {
     background: linear-gradient(49deg, #a200ff59, #ffffff56);
     background-size: 100% 100%;
-
-    -webkit-animation: bstrap 30s ease infinite;
-    -moz-animation: bstrap 30s ease infinite;
-    animation: bstrap 30s ease infinite;
-}
-
-@-webkit-keyframes bstrap {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes bstrap {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes bstrap {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .pycard {
     background: linear-gradient(72deg, #2997ff59, #fcd60256);
     background-size: 100% 100%;
-
-    -webkit-animation: pyt 30s ease infinite;
-    -moz-animation: pyt 30s ease infinite;
-    animation: pyt 30s ease infinite;
 }
-
-@-webkit-keyframes pyt {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes pyt {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes pyt {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
 
 .phpcard {
     background: linear-gradient(8deg, #8c67e459, #0000001c);
     background-size: 100% 100%;
-
-    -webkit-animation: pphp 30s ease infinite;
-    -moz-animation: pphp 30s ease infinite;
-    animation: pphp 30s ease infinite;
-}
-
-@-webkit-keyframes pphp {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes pphp {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes pphp {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .fluttercard {
     background: linear-gradient(8deg, #0099ff59, #002bb81c);
     background-size: 100% 100%;
-
-    -webkit-animation: flutt 30s ease infinite;
-    -moz-animation: flutt 30s ease infinite;
-    animation: flutt 30s ease infinite;
-}
-
-@-webkit-keyframes flutt {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes flutt {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes flutt {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .illustratorcard {
     background: linear-gradient(100deg, #e47a0279, #ffffff1c);
     background-size: 100% 100%;
-
-    -webkit-animation: ill 30s ease infinite;
-    -moz-animation: ill 30s ease infinite;
-    animation: ill 30s ease infinite;
-}
-
-@-webkit-keyframes ill {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes ill {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes ill {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .csscard {
     background: linear-gradient(170deg, #021bf879, #ffffff1c);
     background-size: 100% 100%;
-
-    -webkit-animation: ccs 30s ease infinite;
-    -moz-animation: ccs 30s ease infinite;
-    animation: ccs 30s ease infinite;
-}
-
-@-webkit-keyframes ccs {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes ccs {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes ccs {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .javacard {
     background: linear-gradient(70deg, #021bf879, #ff373763);
     background-size: 100% 100%;
-
-    -webkit-animation: jav 30s ease infinite;
-    -moz-animation: jav 30s ease infinite;
-    animation: jav 30s ease infinite;
-}
-
-@-webkit-keyframes jav {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes jav {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes jav {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .ccard {
     background: linear-gradient(70deg, #4b4d5c79, #00000025);
     background-size: 100% 100%;
-
-    -webkit-animation: carcar 30s ease infinite;
-    -moz-animation: carcar 30s ease infinite;
-    animation: carcar 30s ease infinite;
-}
-
-@-webkit-keyframes carcar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes carcar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes carcar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .dartcard {
     background: linear-gradient(70deg, #00ffb357, #0167ff50);
     background-size: 100% 100%;
-
-    -webkit-animation: dar 30s ease infinite;
-    -moz-animation: dar 30s ease infinite;
-    animation: dar 30s ease infinite;
 }
 
-@-webkit-keyframes dar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+.phocard {
+    background: linear-gradient(20deg, #00c3ff75, #ffffff50);
+    background-size: 100% 100%;
 }
-@-moz-keyframes dar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+
+.sqlcard {
+    background: linear-gradient(320deg, #ffae0075, #0039f550);
+    background-size: 100% 100%;
 }
-@keyframes dar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+
+.gitcard {
+    background: linear-gradient(220deg, #00000075, #ffffff50);
+    background-size: 100% 100%;
 }
+
+.ezbarcard {
+    background: linear-gradient(220deg, #EA7B97, #F8DB64);
+    background-size: 100% 100%;
+}
+
+.webcard {
+    background: linear-gradient(150deg, #dd0030d0, #fffef9);
+    background-size: 100% 100%;
+}
+
+
 
 
 
