@@ -63,8 +63,6 @@ body {
 .popOver {
     -webkit-animation: bummer 1s;
     animation: bummer 1s;
-    -webkit-transform: scale(0,0); 
-    transform: scale(0,0);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; /* Add this so that your modal doesn't 
                                       close after the animation completes */
@@ -72,13 +70,13 @@ body {
 
 @-webkit-keyframes bummer {
     100% {
-        -webkit-transform: scale(1,1); 
+        -webkit-transform: scale(1.0); 
     }
 }
 
 @keyframes bummer {
     100% {
-        transform: scale(1,1); 
+        transform: scale(1.0); 
     }
 }
 #imagetext {
@@ -194,6 +192,8 @@ button {
 
 .scalecards {
     transition: 0.3s;
+    animation-fill-mode: both;
+    transform: scale(0);
 }
 
 .scalecards:hover {
