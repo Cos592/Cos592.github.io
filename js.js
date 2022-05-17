@@ -1,3 +1,8 @@
+  window.onload = function() {
+    document.body.className += " loaded";
+}
+
+
 $('.carousel-item', '.multi-item-carousel').each(function(){
     var next = $(this).next();
     if (! next.length) {
@@ -11,3 +16,4 @@ $('.carousel-item', '.multi-item-carousel').each(function(){
     }
     prev.children(':nth-last-child(2)').clone().prependTo($(this));
   });
+

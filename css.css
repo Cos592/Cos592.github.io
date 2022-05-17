@@ -45,40 +45,18 @@ body {
     
 }
 
-#bg {
-    background-image: url("assets/bodybg.jpg");
-    image-rendering: crisp-edges;
-    background-size: cover;
-    background-position: center;
-    animation: fadeIn 2s;
-    width: 100%;
-    height: 100%;
+.fadein {
+    opacity: 0;
+    -moz-transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+    -o-transition: opacity 1.5s;
+    transition: opacity 1.5s;
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+body.loaded .fadein {
+    opacity: 1;
 }
 
-.popOver {
-    -webkit-animation: bummer 1s;
-    animation: bummer 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; /* Add this so that your modal doesn't 
-                                      close after the animation completes */
-}
-
-@-webkit-keyframes bummer {
-    100% {
-        -webkit-transform: scale(1.0); 
-    }
-}
-
-@keyframes bummer {
-    100% {
-        transform: scale(1.0); 
-    }
-}
 #imagetext {
     min-width: 200px;
     max-height: 350px;
@@ -191,12 +169,15 @@ button {
 }
 
 .scalecards {
-    transition: 0.3s;
-    animation-fill-mode: both;
-    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
+    cursor: pointer;
 }
 
 .scalecards:hover {
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -209,19 +190,8 @@ button {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .css-selector {
-    background: linear-gradient(185deg, #0011ff, #ffef00);
+    background: linear-gradient(185deg, #00ff4c, #003cff);
     background-size: 200% 200%;
 
     -webkit-animation: CoolBG 13s ease infinite;
@@ -285,16 +255,13 @@ button {
 .card {
     border-radius: 35px;
 }
-
-.topitem {
-    background: linear-gradient(49deg, #2e638f6b, #79e4c056);
-    background-size: 100% 100%;
-}
-
-
-
 .noborder {
     border: 0px;
+}
+
+.topitem {
+    background: linear-gradient(49deg, #008cff6b, #79e4c056);
+    background-size: 100% 100%;
 }
 
 .bstrapcard {
@@ -364,6 +331,11 @@ button {
 
 .webcard {
     background: linear-gradient(150deg, #dd0030d0, #fffef9);
+    background-size: 100% 100%;
+}
+
+.aqcard {
+    background: linear-gradient(50deg, #00b7ff77, #00e73286);
     background-size: 100% 100%;
 }
 
