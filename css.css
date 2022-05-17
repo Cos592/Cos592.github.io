@@ -45,16 +45,15 @@ body {
     
 }
 
-.fadein {
-    opacity: 0;
-    -moz-transition: opacity 1.5s;
-    -webkit-transition: opacity 1.5s;
-    -o-transition: opacity 1.5s;
-    transition: opacity 1.5s;
+#bg {
+    animation: fadeIn 2s;
+    width: 100%;
+    height: 100%;
 }
 
-body.loaded .fadein {
-    opacity: 1;
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 #imagetext {
@@ -169,6 +168,7 @@ button {
 }
 
 .scalecards {
+    display: inline-block;
     -webkit-transition: -webkit-transform 0.2s;
 	transition: -webkit-transform 0.2s;
 	transition: transform 0.2s;
@@ -255,6 +255,8 @@ button {
 .card {
     border-radius: 35px;
 }
+
+
 .noborder {
     border: 0px;
 }
