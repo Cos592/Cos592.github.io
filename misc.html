@@ -4,6 +4,8 @@
 <head>
     <title>Cos592</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">     <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,7 +24,7 @@
     <script src="https://kit.fontawesome.com/5344cb912c.js" crossorigin="anonymous"></script>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"  data-aos="fade-down">
           <div class="row topitem m-1 p-1" style="border-radius: 15px;"><img src="assets/floppa.png" id="smallfloppa"><a
               class="navbar-brand" id="username" href="index.html"> Cos592</a></div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,7 +52,7 @@
 
 
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 slide-in-bck-center">
     <div class="col d-flex justify-content-center miscbg">
 
     </div>
@@ -74,6 +76,9 @@
             © 2022 Copyright: <a class="text-dark" id="username" href="https://github.com/Cos592">Cos592</a><br>
         </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
