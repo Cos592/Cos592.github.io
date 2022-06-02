@@ -166,13 +166,6 @@ button {
   }
 
 
-.css-selector {
-    background-image: url(assets/videobg.gif);
-    background-size: cover;
-    z-index: -1;
-}
-
-
 
 .miscbg {
     width: 100%;
@@ -354,4 +347,24 @@ body {
         }
       }
     )
+}
+
+#myVideo {
+    position:fixed;
+    object-fit: fill;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  }
+
+
+.carosello {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #dfdfdf;
 }
