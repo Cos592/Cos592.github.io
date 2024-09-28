@@ -1,6 +1,81 @@
-
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler .fa-bars {
+    color: #fff;
+}
+
+
+.header .navbar-default {
+    background: none;
+}
+
+footer {
+    background: linear-gradient(0deg, #ffffff, #00000000);
+}
+
+.transparent {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0, 0, 0, 0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop(0%, rgba(0, 0, 0, 0.00)), color-stop(100%, rgba(0, 0, 0, 0.00)));
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+body {
+    /*     background-color: white; */
+    overflow-x: hidden;
+    text-align: center;
+    background: url('bg.svg') center center fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#body_div {
+    min-height: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background: url("./bg.svg") no-repeat center center fixed;
+    background-color: black;
 }
 
 #title1 {
@@ -17,7 +92,7 @@ h1 {
 
 #floppa {
     border-radius: 45px;
-    width:fit-content;
+    width: fit-content;
     transition: 0.5s;
     width: 350px;
 }
@@ -37,18 +112,6 @@ h1 {
 
 #username:hover {
     color: rgba(0, 0, 0, 0.459);
-}
-
-body {
-    text-align: center;
-    
-}
-
-
-
-#imagetext {
-    min-width: 200px;
-    max-height: 350px;
 }
 
 #navtitle {
@@ -86,8 +149,7 @@ header {
 }
 
 .smallimg {
-    max-height: 300px;
-    transition: 0.2s;
+    max-height: 260px;
 }
 
 .smallimg:hover {
@@ -114,6 +176,7 @@ header {
 .carousel {
     overflow: hidden;
 }
+
 .carousel-inner {
     width: 150%;
     left: -25%;
@@ -160,38 +223,60 @@ button {
 .notextstyle {
     text-decoration: none;
 }
-.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-  }
-
-
 
 .miscbg {
     width: 100%;
     height: 100%;
-    background: linear-gradient(232deg, #ff0000, #feff00, #11ff00, #00ffc4, #0020ff, #c100ff, #ff00cd);
-    background-size: 1400% 1400%;
-
+    min-height: 100vh;
+    /* background: url("bg.svg"); */
+    background-attachment: fixed;
+        background: linear-gradient(232deg, #1d0035, #c100ff, #ff00cd);
+    background-size: 120% 600%;
     -webkit-animation: MegaMisc 26s ease infinite;
     -moz-animation: MegaMisc 26s ease infinite;
     animation: MegaMisc 26s ease infinite;
 }
 
 @-webkit-keyframes MegaMisc {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-moz-keyframes MegaMisc {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @keyframes MegaMisc {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .pythongrad {
@@ -214,32 +299,32 @@ button {
 }
 
 .topitem {
-    background: linear-gradient(49deg, #008cff6b, #79e4c056);
+    background: linear-gradient(49deg, #008cffa6, #79e4c0a2);
     background-size: 100% 100%;
 }
 
 .bstrapcard {
-    background: linear-gradient(49deg, #a200ff59, #ffffff56);
+    background: linear-gradient(49deg, #a200ffa8, #ffffffa9);
     background-size: 100% 100%;
 }
 
 .pycard {
-    background: linear-gradient(72deg, #2997ff59, #fcd60256);
+    background: linear-gradient(72deg, #2998ffa2, #fcd602ab);
     background-size: 100% 100%;
 }
 
 .phpcard {
-    background: linear-gradient(8deg, #8c67e459, #0000001c);
+    background: linear-gradient(8deg, #8d67e48c, #00000081);
     background-size: 100% 100%;
 }
 
 .fluttercard {
-    background: linear-gradient(8deg, #0099ff59, #002bb81c);
+    background: linear-gradient(170deg, #46b5ff60, #3292ffcb);
     background-size: 100% 100%;
 }
 
 .illustratorcard {
-    background: linear-gradient(100deg, #e47a0279, #ffffff1c);
+    background: linear-gradient(100deg, #c48600b4, #ffdf879c);
     background-size: 100% 100%;
 }
 
@@ -264,7 +349,7 @@ button {
 }
 
 .phocard {
-    background: linear-gradient(20deg, #00c3ff75, #ffffff50);
+    background: linear-gradient(180deg, #2672ffc0, #00122b86);
     background-size: 100% 100%;
 }
 
@@ -274,7 +359,7 @@ button {
 }
 
 .gitcard {
-    background: linear-gradient(220deg, #00000075, #ffffff50);
+    background: linear-gradient(220deg, #000000af, #ffffff63);
     background-size: 100% 100%;
 }
 
@@ -284,87 +369,11 @@ button {
 }
 
 .webcard {
-    background: linear-gradient(150deg, #dd0030d0, #fffef9);
+    background: linear-gradient(150deg, #ae00ffd0, #ffffff23);
     background-size: 100% 100%;
 }
 
 .aqcard {
-    background: linear-gradient(50deg, #00b7ff77, #00e73286);
+    background: linear-gradient(50deg, #00b7ffc2, #00e732b0);
     background-size: 100% 100%;
-}
-
-
-
-body {
-    background-color: white;
-    overflow-x: hidden;
-}
-
-
-.test {
-    --color: @p(#51eaea, #fffde1, #ff9d76, #FB3569);
-    --rule: (
-      :doodle {
-        @grid: 30x1 / 18vmin;
-        --deg: @p(-180deg, 180deg);
-      }
-      :container {
-        perspective: 30vmin;
-      }
-      :after, :before {
-        content: '';
-        background: var(--color); 
-        @place-cell: @r(100%) @r(100%);
-        @size: @r(6px);
-        @shape: heart;
-      }
-    
-      @place-cell: center;
-      @size: 100%;
-    
-      box-shadow: @m2(0 0 50px var(--color));
-      background: @m100(
-        radial-gradient(var(--color) 50%, transparent 0) 
-        @r(-20%, 120%) @r(-20%, 100%) / 1px 1px
-        no-repeat
-      );
-    
-      will-change: transform, opacity;
-      animation: scale-up 12s linear infinite;
-      animation-delay: calc(-12s / @I * @i);
-
-      @keyframes scale-up {
-        0%, 95.01%, 100% {
-          transform: translateZ(0) rotate(0);
-          opacity: 0;
-        }
-        10% { 
-          opacity: 1; 
-        }
-        95% {
-          transform: 
-            translateZ(35vmin) rotateZ(@var(--deg));
-        }
-      }
-    )
-}
-
-#myVideo {
-    position:fixed;
-    object-fit: cover;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-  }
-
-
-.carosello {
-    background-color: #fff;
-}
-
-footer {
-    background-color: #dfdfdf;
 }
