@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="miscbg">
+<html lang="en" class="miscbg container-fluid p-0 m-0">
 
 <head>
   <title>C.B.A.</title>
@@ -26,21 +26,21 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="css.css">
 
-
-
 </head>
 
-
-<body class="vh-100 vw-100" data-aos="zoom-out">
-  <div class="d-block d-flex flex-column vh-100 vw-100" style="background-attachment: fixed;background-repeat: repeat;">
+<body class="container-fluid p-0 m-0" data-aos="zoom-out">
+  <script>
+    AOS.init();
+  </script>
+  <div class="flex-column p-0 m-0" style="background-attachment: fixed;background-repeat: repeat;">
     <!-- navbar-light bg-light -->
-
 
     <nav class="navbar navbar-dark navbar-scroll navbar-expand-lg" data-aos="fade-down"
       style="background-color: #00000000;">
-      <div class="container-fluid">
+      <div class="container-fluid p-0 m-0">
         <div class="row topitem m-1 p-1" style="border-radius: 15px;">
-          <div class="col p-0"><img src="assets/floppa.png" id="smallfloppa" alt="Big Floppa"></div>
+          <div class="col p-0"><a href="index.html"><img src="assets/floppa.png" id="smallfloppa" alt="Big Floppa"></a>
+          </div>
           <div class="col align-items-end px-0 pt-1"><a class="navbar-brand" id="username" href="index.html">C.B.A.</a>
           </div>
         </div>
@@ -65,81 +65,86 @@
     </nav>
 
     <div class="spacer"></div>
-    <h2 data-aos="zoom-in">My Skills</h2>
-    <div class="p-5"></div>
+    <h2 data-aos="zoom-in">My Knowledge</h2>
+    <div class="spacer"></div>
     <div class="cards-2 section-gray">
-      <div class="container">
-        <div class="row align-items-center">
+      <div class="container-fluid">
+        <div class="row align-items-top">
 
-          <div class="col-md-4">
-            <div class="card mb-4 p-3 noborder bstrapcard" data-aos="zoom-out">
+          <div class="col-md-4 align-top">
+
+
+            <div class="card mb-4 p-3 noborder pycard scalecards" data-aos="zoom-out">
               <div class="card-image">
-                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/bstrap.png"> </a>
-                <div class="ripple-cont"></div>
+                <a href="#"> <img class="img img-raised w-100 p-5" src="assets/python.png"> </a>
               </div>
               <div class="table">
-                <h6 class="category text-info">Design</h6>
-                <h4 class="card-caption" class="notextstyle">
-                  <a href="#">Bootstrap</a>
+                <h6 class="category text-warning">Back-end Development</h6>
+                <h4 class="card-caption">
+                  <a href="#" class="card_link">Python</a>
                 </h4>
-                <p class="card-description"> Knowledge in Bootstrap, a simple website CSS library. </p>
+                <p class="card-description"> Used professionally multiple years for AI and B-E Development. </p>
               </div>
             </div>
+
+
+
             <div class="card mb-4 p-3 scalecards noborder fluttercard" data-aos="zoom-out">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised w-100 p-5" src="assets/flutter.png"> </a>
               </div>
               <div class="table">
-                <h6 class="category text-danger">App Development Framework</h6>
+                <h6 class="category text-info">App Development Framework</h6>
                 <h4 class="card-caption">
-                  <a href="#" class="notextstyle">Flutter</a>
+                  <a href="#" class="card_link notextstyle">Flutter</a>
                 </h4>
                 <p class="card-description"> Experience in GUI programming in Flutter, a Cross-Platform Dart framework.
                 </p>
               </div>
             </div>
 
-            <div class="card mb-4 p-3 scalecards noborder phpcard" data-aos="zoom-out">
+            <div class="card mb-4 p-3 scalecards noborder djangocard" data-aos="zoom-out">
               <div class="card-image">
-                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/php.png"> </a>
+                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/django.png"> </a>
               </div>
               <div class="table">
-                <h6 class="category text-success">Website Back-end</h6>
+                <h6 class="category text-success">Python Framework</h6>
                 <h4 class="card-caption">
-                  <a href="#">PHP</a>
+                  <a href="#" class="card_link">Django</a>
                 </h4>
-                <p class="card-description"> Advanced Knowledge in PHP, an open-source server-side scripting language.
+                <p class="card-description"> Advanced knowledge in Django and professional REST API creation
                 </p>
               </div>
             </div>
 
           </div>
 
-          <div class="col-md-4">
-            <div class="card mb-4 p-3 noborder pycard scalecards" data-aos="zoom-out">
+          <div class="col-md-4 align-top">
+
+            <div class="card mb-4 p-3 noborder bstrapcard" data-aos="zoom-out">
               <div class="card-image">
-                <a href="#"> <img class="img img-raised w-100 p-5" src="assets/python.png"> </a>
+                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/bstrap.png"> </a>
+                <div class="ripple-cont"></div>
               </div>
               <div class="table">
-                <h6 class="category text-danger">Data Manipulation</h6>
-                <h4 class="card-caption">
-                  <a href="#">Python</a>
+                <h6 class="category text-secondary">Responsive CSS toolkit</h6>
+                <h4 class="card-caption" class="notextstyle">
+                  <a href="#" class="card_link">Bootstrap</a>
                 </h4>
-                <p class="card-description"> Ability in the usage of Python, a very simple linear language that is
-                  widely
-                  used. </p>
+                <p class="card-description"> Knowledge in Bootstrap, a simple and intuitive website CSS library. </p>
               </div>
             </div>
 
+    
             <div class="card mb-4 p-3 scalecards noborder illustratorcard" data-aos="zoom-out">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/illustrator.png"> </a>
                 <div class="ripple-cont"></div>
               </div>
               <div class="table">
-                <h6 class="category text-info">Icon Maker</h6>
+                <h6 class="category text-danger">Icon Maker</h6>
                 <h4 class="card-caption">
-                  <a href="#">Adobe Illustrator</a>
+                  <a href="#" class="card_link">Adobe Illustrator</a>
                 </h4>
                 <p class="card-description"> Logo-Making skills in Adobe Illustrator, a professional logo and graphic
                   maker. </p>
@@ -152,9 +157,9 @@
                 <div class="ripple-cont"></div>
               </div>
               <div class="table">
-                <h6 class="category text-info">SQL Databases</h6>
+                <h6 class="category text-warning">SQL Databases</h6>
                 <h4 class="card-caption">
-                  <a href="#">MySQL</a>
+                  <a href="#" class="card_link">MySQL</a>
                 </h4>
                 <p class="card-description"> Database Management Skills in MySQL, a popular SQL DBMS. </p>
               </div>
@@ -162,7 +167,7 @@
 
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 align-top">
 
             <div class="card mb-4 p-3 scalecards noborder javacard" data-aos="zoom-out">
               <div class="card-image">
@@ -171,7 +176,7 @@
               <div class="table">
                 <h6 class="category text-danger">Object-Oriented Universal Language</h6>
                 <h4 class="card-caption">
-                  <a href="#" class="notextstyle">Java</a>
+                  <a href="#" class="card_link notextstyle">Java</a>
                 </h4>
                 <p class="card-description"> Advenced knowledge in Java, an Object-Oriented Programming Language </p>
               </div>
@@ -182,9 +187,9 @@
                 <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/git.png"> </a>
               </div>
               <div class="table">
-                <h6 class="category text-success">Project Control, Versioning</h6>
+                <h6 class="category text-dark">Project Control, Versioning</h6>
                 <h4 class="card-caption">
-                  <a href="#">GitHub</a>
+                  <a href="#" class="card_link">GitHub</a>
                 </h4>
                 <p class="card-description"> All my projects are managed on Github, a commonly-used project versioning
                   tool</p>
@@ -195,9 +200,9 @@
                 <a href="#"> <img class="img img-raised w-100 p-5" src="assets/photoshop.png"> </a>
               </div>
               <div class="table">
-                <h6 class="category text-danger">Photo Editor</h6>
+                <h6 class="category text-info">Photo Editor</h6>
                 <h4 class="card-caption">
-                  <a href="#">Photoshop</a>
+                  <a href="#" class="card_link">Photoshop</a>
                 </h4>
                 <p class="card-description"> image Editing skills in Photoshop, the most popular photo editor in the
                   professional community. </p>
@@ -244,7 +249,7 @@
             <div class="card mb-5 aqcard p-4 scalecards projcard webcard noborder" data-aos="zoom-out">
               <div class="row g-0 align-items-center">
                 <div class="col-md-4">
-                  <img src="assets/aquilone.png" class="img-fluid rounded-start roundedfloppa" alt="EazyBar">
+                  <img src="assets/aquilone.png" class="img-fluid roundedfloppa" alt="EazyBar">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -259,7 +264,7 @@
             <div class="card mb-5 ezbarcard p-4 scalecards projcard webcard noborder" data-aos="zoom-out">
               <div class="row g-0 align-items-center">
                 <div class="col-md-4">
-                  <img src="assets/floppa.png" class="img-fluid rounded-start roundedfloppa" alt="EazyBar">
+                  <img src="assets/floppa.png" class="img-fluid roundedfloppa" alt="EazyBar">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -288,7 +293,6 @@
           <a href="https://www.instagram.com/cosmin_buzamat/"><i class="fa-brands fa-instagram socials"></i></a>
           <a href="https://www.linkedin.com/in/cosmin-andrei-buzamat-729511192/"><i
               class="fa-brands fa-linkedin socials"></i></a>
-          <a href="https://twitter.com/C_os592"><i class="fa-brands fa-twitter socials"></i></a>
         </section>
         <section class="mb-4">
           <p class="h6">Email: <a href="mailto:cosminbuzamat3@gmail.com">cosminbuzamat3@gmail.com</a></p>
@@ -296,12 +300,11 @@
         </section>
       </div>
       <div class="text-center p-2 text-dark">
-        © 2024 Copyright: <a class="text-dark" id="username" href="https://github.com/Cos592">Cosmin Andrei Buzamat</a><br>
+        © 2024 Copyright: <a class="text-dark" id="username" href="https://github.com/Cos592">Cosmin Andrei
+          Buzamat</a><br>
       </div>
     </footer>
-    <script>
-      AOS.init();
-    </script>
+
   </div>
 </body>
 

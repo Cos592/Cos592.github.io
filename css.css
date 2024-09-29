@@ -17,6 +17,11 @@ footer {
     background: linear-gradient(0deg, #ffffff, #00000000);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .transparent {
     border-width: 0px;
     -webkit-box-shadow: 0px 0px;
@@ -38,6 +43,10 @@ footer {
     background-color: #fff;
 }
 
+.navbar {
+    max-width: 100%;
+}
+
 /* An optional height of the navbar AFTER scroll */
 .navbar.navbar-scroll.navbar-scrolled {
     padding-top: 5px;
@@ -46,22 +55,20 @@ footer {
 
 
 body {
-    /*     background-color: white; */
-    overflow-x: hidden;
+    background-color: transparent;
     text-align: center;
-    background: url('bg.svg') center center fixed;
-    background-size: cover;
-    position: absolute;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html {
     height: 100%;
-    min-height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .card-horizontal {
@@ -144,16 +151,32 @@ header {
     transform: scale(1.03);
 }
 
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
 .roundedfloppa {
     border-radius: 20px;
 }
 
 .smallimg {
     max-height: 260px;
+    transition-duration: 500ms;
+    z-index: 10;
+    width: auto;
+    object-position: 100% 0%;
+    object-fit: cover;
 }
 
 .smallimg:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .carousel-control-next-icon {
@@ -175,7 +198,9 @@ header {
 
 .carousel {
     overflow: hidden;
+    max-width: 100%;
 }
+
 
 .carousel-inner {
     width: 150%;
@@ -190,7 +215,7 @@ header {
     margin: 5px;
     transition: 0.2s;
     transform: scale(1.4);
-    color: gray;
+    color: rgba(0, 0, 0, 0.795);
 }
 
 .socials:hover {
@@ -224,14 +249,18 @@ button {
     text-decoration: none;
 }
 
+.card_link {
+    color: #3b0034;
+    text-decoration: underline;
+}
+
 .miscbg {
     width: 100%;
     height: 100%;
     min-height: 100vh;
     /* background: url("bg.svg"); */
-    background-attachment: fixed;
-        background: linear-gradient(232deg, #1d0035, #c100ff, #ff00cd);
-    background-size: 120% 600%;
+    background: linear-gradient(45deg, #1d0035, #c100ff, #ff00cd, #1d0035);
+    background-size: 110% 2000%;
     -webkit-animation: MegaMisc 26s ease infinite;
     -moz-animation: MegaMisc 26s ease infinite;
     animation: MegaMisc 26s ease infinite;
@@ -299,7 +328,7 @@ button {
 }
 
 .topitem {
-    background: linear-gradient(49deg, #008cffa6, #79e4c0a2);
+    background: linear-gradient(49deg, #6d3a0060, #01cc88d5);
     background-size: 100% 100%;
 }
 
@@ -313,8 +342,8 @@ button {
     background-size: 100% 100%;
 }
 
-.phpcard {
-    background: linear-gradient(8deg, #8d67e48c, #00000081);
+.djangocard {
+    background: linear-gradient(8deg, #00ca54b9, #00000081);
     background-size: 100% 100%;
 }
 
@@ -366,6 +395,8 @@ button {
 .ezbarcard {
     background: linear-gradient(220deg, #EA7B97, #F8DB64);
     background-size: 100% 100%;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .webcard {
