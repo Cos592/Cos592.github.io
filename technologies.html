@@ -28,18 +28,18 @@
 
 </head>
 
-<body class="container-fluid p-0 m-0" data-aos="zoom-out">
+<body class="container-fluid p-0 m-0" data-aos="zoom-in">
+
   <script>
     AOS.init();
   </script>
-  <div class="flex-column p-0 m-0" style="background-attachment: fixed;background-repeat: repeat;">
+  <div class="flex-column p-0 m-0">
     <!-- navbar-light bg-light -->
-
-    <nav class="navbar navbar-dark navbar-scroll navbar-expand-lg" data-aos="fade-down"
+    <nav class="navbar navbar-dark navbar-scroll navbar-expand-lg ps-2" data-aos="fade-down"
       style="background-color: #00000000;">
-      <div class="container-fluid p-0 m-0">
-        <div class="row topitem m-1 p-1" style="border-radius: 15px;">
-          <div class="col p-0"><a href="index.html"><img src="assets/floppa.png" id="smallfloppa" alt="Big Floppa"></a>
+      <div class="container-fluid">
+        <div class="row topitem p-1" style="border-radius: 15px;">
+          <div class="col p-0"><img src="assets/mylogo.png" id="smallfloppa" alt="Big Floppa">
           </div>
           <div class="col align-items-end px-0 pt-1"><a class="navbar-brand" id="username" href="index.html">C.B.A.</a>
           </div>
@@ -68,13 +68,12 @@
     <h2 data-aos="zoom-in">My Knowledge</h2>
     <div class="spacer"></div>
     <div class="cards-2 section-gray">
-      <div class="container-fluid">
-        <div class="row align-items-top">
+      <div class="container">
+        <div class="row justify-content-center">
 
-          <div class="col-md-4 align-top">
+          <div class="col-md-4">
 
-
-            <div class="card mb-4 p-3 noborder pycard scalecards" data-aos="zoom-out">
+            <div class="card mb-4 p-3 noborder pycard scalecards" data-aos="zoom-in">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised w-100 p-5" src="assets/python.png"> </a>
               </div>
@@ -87,9 +86,40 @@
               </div>
             </div>
 
-
-
-            <div class="card mb-4 p-3 scalecards noborder fluttercard" data-aos="zoom-out">
+            <div class="card mb-4 p-3 noborder bstrapcard" data-aos="zoom-in">
+              <div class="card-image">
+                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/bstrap.png"> </a>
+                <div class="ripple-cont"></div>
+              </div>
+              <div class="table">
+                <h6 class="category text-secondary">Responsive CSS toolkit</h6>
+                <h4 class="card-caption" class="notextstyle">
+                  <a href="#" class="card_link">Bootstrap</a>
+                </h4>
+                <p class="card-description"> Knowledge in Bootstrap, a simple and intuitive website CSS library. </p>
+              </div>
+            </div>
+            
+            <div class="card mb-4 p-3 scalecards noborder djangocard" data-aos="zoom-in">
+              <div class="card-image">
+                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/django.png"> </a>
+              </div>
+              <div class="table">
+                <h6 class="category text-success">Python Framework</h6>
+                <h4 class="card-caption">
+                  <a href="#" class="card_link">Django</a>
+                </h4>
+                <p class="card-description"> Advanced knowledge in Django and professional REST API creation
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+          <div class="col-md-4">
+            
+            <div class="card mb-4 p-3 scalecards noborder fluttercard" data-aos="zoom-in">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised w-100 p-5" src="assets/flutter.png"> </a>
               </div>
@@ -103,40 +133,8 @@
               </div>
             </div>
 
-            <div class="card mb-4 p-3 scalecards noborder djangocard" data-aos="zoom-out">
-              <div class="card-image">
-                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/django.png"> </a>
-              </div>
-              <div class="table">
-                <h6 class="category text-success">Python Framework</h6>
-                <h4 class="card-caption">
-                  <a href="#" class="card_link">Django</a>
-                </h4>
-                <p class="card-description"> Advanced knowledge in Django and professional REST API creation
-                </p>
-              </div>
-            </div>
 
-          </div>
-
-          <div class="col-md-4 align-top">
-
-            <div class="card mb-4 p-3 noborder bstrapcard" data-aos="zoom-out">
-              <div class="card-image">
-                <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/bstrap.png"> </a>
-                <div class="ripple-cont"></div>
-              </div>
-              <div class="table">
-                <h6 class="category text-secondary">Responsive CSS toolkit</h6>
-                <h4 class="card-caption" class="notextstyle">
-                  <a href="#" class="card_link">Bootstrap</a>
-                </h4>
-                <p class="card-description"> Knowledge in Bootstrap, a simple and intuitive website CSS library. </p>
-              </div>
-            </div>
-
-    
-            <div class="card mb-4 p-3 scalecards noborder illustratorcard" data-aos="zoom-out">
+            <div class="card mb-4 p-3 scalecards noborder illustratorcard" data-aos="zoom-in">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/illustrator.png"> </a>
                 <div class="ripple-cont"></div>
@@ -151,7 +149,7 @@
               </div>
             </div>
 
-            <div class="card mb-4 p-3 scalecards noborder sqlcard" data-aos="zoom-out">
+            <div class="card mb-4 p-3 scalecards noborder sqlcard" data-aos="zoom-in">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/sql.png"> </a>
                 <div class="ripple-cont"></div>
@@ -167,9 +165,10 @@
 
           </div>
 
-          <div class="col-md-4 align-top">
 
-            <div class="card mb-4 p-3 scalecards noborder javacard" data-aos="zoom-out">
+          <div class="col-md-4">
+
+            <div class="card mb-4 p-3 scalecards noborder javacard" data-aos="zoom-in">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised w-100 p-5" src="assets/java.png"> </a>
               </div>
@@ -182,7 +181,7 @@
               </div>
             </div>
 
-            <div class="card mb-4 p-3 scalecards noborder gitcard" data-aos="zoom-out">
+            <div class="card mb-4 p-3 scalecards noborder gitcard" data-aos="zoom-in">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised  w-100 p-5" src="assets/git.png"> </a>
               </div>
@@ -195,7 +194,8 @@
                   tool</p>
               </div>
             </div>
-            <div class="card mb-4 p-3 noborder phocard scalecards" data-aos="zoom-out">
+
+            <div class="card mb-4 p-3 noborder phocard scalecards" data-aos="zoom-in">
               <div class="card-image">
                 <a href="#"> <img class="img img-raised w-100 p-5" src="assets/photoshop.png"> </a>
               </div>
@@ -208,6 +208,8 @@
                   professional community. </p>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>
@@ -219,12 +221,12 @@
 
 
     <div class="cards-2 section-gray">
-      <div class="container">
+      <div class="container no-overflow">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-10 align-self-center">
 
 
-            <div class="card mb-5 ezbarcard p-4 scalecards projcard noborder" data-aos="zoom-out">
+            <div class="card mb-5 ezbarcard p-4 scalecards projcard noborder" data-aos="zoom-in">
               <div class="row g-0 align-items-center">
                 <div class="col-md-4">
                   <img src="assets/Icon_Transp.png" class="img-fluid rounded-start" alt="EazyBar">
@@ -232,10 +234,11 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">EasyBar</h5>
-                    <p class="card-text">A school project which consists of a food delivery system for the school
+                    <p class="card-text">A pretty advanced school project which consists of a food delivery system for
+                      the school
                       cafeteria.<br>
-                      In this project I was the lead designer and one of the programmers.<br>
-                      This project was made using the Scrum Framework Of the Agile business model.<br></p>
+                      In this project I was the lead designer and Frontend programmer.<br>
+                      This project was made using the Scrum "Framework" Of the Agile model.<br></p>
                     <p class="card-text"><small class="text-muted">Instagram Link: <a
                           href="https://www.instagram.com/easybar.itsos/">https://www.instagram.com/easybar.itsos/</a></small>
                     </p>
@@ -246,7 +249,7 @@
 
 
 
-            <div class="card mb-5 aqcard p-4 scalecards projcard webcard noborder" data-aos="zoom-out">
+            <div class="card mb-5 aqcard p-4 scalecards projcard webcard noborder" data-aos="zoom-in">
               <div class="row g-0 align-items-center">
                 <div class="col-md-4">
                   <img src="assets/aquilone.png" class="img-fluid roundedfloppa" alt="EazyBar">
@@ -255,16 +258,17 @@
                   <div class="card-body">
                     <h5 class="card-title">Aquilone</h5>
                     <p class="card-text">A Health/Well-Being website connected to a database.<br>
-                      Every minute, the database gets data from air quality sensors.<br>
+                      Every minute, the database receives data from air quality sensors. This data can be viewed on a
+                      website which holds a map of all the rooms where the sensors are installed.<br>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="card mb-5 ezbarcard p-4 scalecards projcard webcard noborder" data-aos="zoom-out">
+            <div class="card mb-5 ezbarcard p-4 webcard noborder" data-aos="zoom-in">
               <div class="row g-0 align-items-center">
                 <div class="col-md-4">
-                  <img src="assets/floppa.png" class="img-fluid roundedfloppa" alt="EazyBar">
+                  <img src="assets/mylogo.png" class="img-fluid roundedfloppa" alt="EazyBar">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -284,7 +288,6 @@
         </div>
       </div>
     </div>
-    <div class="spacer"></div>
 
     <footer class="text-center text-grey mt-auto vw-100">
       <div class="container p-4 text-dark">

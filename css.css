@@ -14,7 +14,7 @@ h1 {
 }
 
 footer {
-    background: linear-gradient(0deg, #ffffff, #00000000);
+    background: linear-gradient(0deg, #ffffff, #ffffff21, #ffffff07, #00000000);
 }
 
 * {
@@ -59,16 +59,16 @@ body {
     text-align: center;
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 html {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100vw;
 }
 
 .card-horizontal {
@@ -121,10 +121,6 @@ html {
     color: rgba(0, 0, 0, 0.459);
 }
 
-#navtitle {
-    margin-left: 20px;
-}
-
 li {
     margin-top: 3px;
 }
@@ -133,9 +129,13 @@ header {
     width: 100%;
 }
 
+.no-overflow {
+    overflow: hidden;
+}
+
 .spacer {
-    padding: 20px;
-    margin: 10px;
+    padding-top: 40px;
+    margin-top: 20px;
 }
 
 
@@ -180,11 +180,11 @@ header {
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-inner {
@@ -227,10 +227,6 @@ p {
 }
 
 
-button {
-    border-radius: 35px;
-}
-
 .button {
     border-radius: 35px;
     transition: 0.3s;
@@ -238,11 +234,6 @@ button {
 
 .button:hover {
     transform: scale(1.05);
-}
-
-.vspacer {
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .notextstyle {
@@ -257,10 +248,9 @@ button {
 .miscbg {
     width: 100%;
     height: 100%;
-    min-height: 100vh;
     /* background: url("bg.svg"); */
-    background: linear-gradient(45deg, #1d0035, #c100ff, #ff00cd, #1d0035);
-    background-size: 110% 2000%;
+    background: linear-gradient(45deg, #1d0035, #c100ff, rgb(0, 183, 255), #ff00cd, #1d0035);
+    background-size: 1300% 2000%;
     -webkit-animation: MegaMisc 26s ease infinite;
     -moz-animation: MegaMisc 26s ease infinite;
     animation: MegaMisc 26s ease infinite;
@@ -378,7 +368,7 @@ button {
 }
 
 .phocard {
-    background: linear-gradient(180deg, #2672ffc0, #00122b86);
+    background: linear-gradient(180deg, #2672ffc0, #00122b11);
     background-size: 100% 100%;
 }
 
@@ -401,6 +391,11 @@ button {
 
 .webcard {
     background: linear-gradient(150deg, #ae00ffd0, #ffffff23);
+    background-size: 100% 100%;
+}
+
+.jobcard {
+    background: linear-gradient(45deg, #ae00ffd0, #00c3ffa4);
     background-size: 100% 100%;
 }
 

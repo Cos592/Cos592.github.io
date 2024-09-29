@@ -28,15 +28,19 @@
 
 </head>
 
-<body class="container-fluid p-0 m-0" data-aos="zoom-out">
+<body class="container-fluid p-0 m-0" data-aos="zoom-in">
+
+    <script>
+        AOS.init();
+    </script>
 
     <div class="flex-column p-0 m-0">
         <!-- navbar-light bg-light -->
-        <nav class="navbar navbar-dark navbar-scroll navbar-expand-lg" data-aos="fade-down"
+        <nav class="navbar navbar-dark navbar-scroll navbar-expand-lg ps-2" data-aos="fade-down"
             style="background-color: #00000000;">
             <div class="container-fluid">
-                <div class="row topitem m-1 p-1" style="border-radius: 15px;">
-                    <div class="col p-0"><img src="assets/floppa.png" id="smallfloppa" alt="Big Floppa">
+                <div class="row topitem p-1" style="border-radius: 15px;">
+                    <div class="col p-0"><img src="assets/mylogo.png" id="smallfloppa" alt="Big Floppa">
                     </div>
                     <div class="col align-items-end px-0 pt-1"><a class="navbar-brand" id="username"
                             href="index.html">C.B.A.</a>
@@ -55,9 +59,6 @@
                         <li class="nav-item ms-3">
                             <a class="nav-link text-dark" href="technologies.html">Skills and Experience</a>
                         </li>
-                        <!--             <li class=" nav-item">
-                  <a class="nav-link" href="misc.html">Timeline</a>
-              </li> -->
                     </ul>
                 </div>
             </div>
@@ -71,13 +72,13 @@
             <div class="row p-1 mx-auto" href="index.html">
                 <img class="img-fluid smallimg p-1 mx-auto" src="assets/mylogo.png" alt="COS Logo">
             </div>
-            <div class="row mx-auto text-align-center" id="title1" data-aos="fade-in" data-aos-duration="300">
+            <div class="row mx-auto text-align-center" id="title1" data-aos="zoom-in" data-aos-duration="300">
                 <p>Welcome</p>
             </div>
             <div class="row mx-auto">
                 <div class="d-block align-items-center text-light">
 
-                    <div class="d-block align-self-center align-items-center p-2 m-2">
+                    <div class="d-block align-self-center align-items-center p-2 m-2" data-aos="zoom-in">
                         <p class="fs-5 text-dark">I'm a 21 y/o Junior Software Dev that enjoys the complete programming
                             process in
                             all
@@ -92,101 +93,133 @@
                 </div>
                 <div class="d-block">
                     <a href="technologies.html" class="btn btn-lg active m-1 button shadow-lg" role="button"
-                        aria-pressed="true"><strong>My Knowledge</strong> </a>
+                        aria-pressed="true" data-aos="zoom-in"><strong>My Knowledge</strong> </a>
                 </div>
             </div>
-        </div>
-
-
-        <!-- FIRST SECTION ENDS HERE -->
 
 
 
-        <div class="spacer"></div>
-
-        <div class="row justify-content-center m-3">
-            <div class="col-md-12 justify-content-center">
-                <p class="h2 text-dark">This extremely simple website was made only using:</p>
-
-                <div class="spacer"></div>
+            <div class="row mx-auto text-align-center mt-5" data-aos="fade-in" data-aos-duration="300">
+                <h2><strong>Currently employed at:</strong></h2>
+            </div>
 
 
-                <!-- CAROUSEL STARTS HERE -->
+            <div class="row mx-auto text-align-center justify-content-center mt-3" data-aos="fade-in"
+                data-aos-duration="300">
 
-                <div id="carouselIndicators" class="carousel slide carousel-dark" data-bs-ride="true">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active justify-content-center">
-                            <img class="smallimg mx-auto" src="assets/bstrap.png" alt="First slide (Bootstrap)">
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
+                <div class="col-md-8 justify-content-center p-0 m-0">
+                    <div class="container no-overflow">
+                        <div class="card mb-5 ezbarcard p-4 jobcard noborder" data-aos="zoom-in">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="assets/mipu.png" class="img-fluid roundedfloppa" alt="Inspiring MIPU">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Inspiring MiPU</h5>
+                                        <p class="card-text">
+                                            I'm working for <strong>Inspiring MiPU</strong> as a Back-end Developer.<br>
+                                            My roles are: Making sure things are running smoothly in the code and
+                                            designing and coding the APIs for external communication.<br>
+                                            I've also helped implement DevOps procedures and standards for the Company.
 
-                            <div class="carousel-caption d-block mx-auto">
-
-                                <p class="h3">Bootstrap</p>
-                                <p class="h5">A powerful and popular js and css <br>toolkit that allows for<br>
-                                    responsive web-based applications.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item justify-content-center">
-                            <img class="smallimg mx-auto" src="assets/css.png" alt="Second slide (CSS)">
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
-                            <div class="spacer"></div>
-                            <div class="carousel-caption d-block mx-auto">
-
-                                <p class="h3">CSS</p>
-                                <p class="h5">The basis of all web-app design,<br> the building block of most
-                                    websites.
-                                </p>
+                                        </p>
+                                        <p class="card-text"><small class="text-muted"><a class="card_link"
+                                                    href="https://inspiringsoftware.com/">https://inspiringsoftware.com/</a></small>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+            </div>
+
+            <div class="row mx-auto m-0 p-0 justify-content-center">
+                <div class="col-md-12 justify-content-center p-0 m-0">
+                    <p class="h2 text-dark" data-aos="zoom-in">This extremely simple website was made only using:</p>
+
+                    <div class="spacer"></div>
+
+
+                    <!-- CAROUSEL STARTS HERE -->
+
+                    <div id="carouselIndicators" class="carousel slide carousel-dark" data-bs-ride="true"
+                        data-aos="zoom-in">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active justify-content-center">
+                                <img class="smallimg mx-auto" src="assets/bstrap.png" alt="First slide (Bootstrap)">
+                                <div class="spacer"></div>
+                                <div class="spacer"></div>
+                                <div class="spacer"></div>
+                                <div class="spacer"></div>
+
+                                <div class="carousel-caption d-block mx-auto">
+
+                                    <p class="h3">Bootstrap</p>
+                                    <p class="h5">A powerful and popular js and css <br>toolkit that allows for<br>
+                                        responsive web-based applications.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item justify-content-center">
+                                <img class="smallimg mx-auto" src="assets/css.png" alt="Second slide (CSS)">
+                                <div class="spacer"></div>
+                                <div class="spacer"></div>
+                                <div class="spacer"></div>
+                                <div class="spacer"></div>
+                                <div class="carousel-caption d-block mx-auto">
+
+                                    <p class="h3">CSS</p>
+                                    <p class="h5">The basis of all web-app design,<br> the building block of most
+                                        websites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAROUSEL ENDS HERE -->
 
                 </div>
-
-                <!-- CAROUSEL ENDS HERE -->
-
             </div>
         </div>
-        <script>
-            AOS.init();
-        </script>
-        <div class="spacer"></div>
-
-
-        <footer class="text-center text-grey mt-auto">
-            <div class="container p-4 text-dark">
-                <section class="mb-4">
-                    <a href="https://github.com/Cos592"><i class="fa-brands fa-github socials"></i></a>
-                    <a href="https://www.instagram.com/cosmin_buzamat/"><i
-                            class="fa-brands fa-instagram socials"></i></a>
-                    <a href="https://www.linkedin.com/in/cosmin-andrei-buzamat-729511192/"><i
-                            class="fa-brands fa-linkedin socials"></i></a>
-                </section>
-                <section class="mb-4">
-                    <p class="h6">Email: <a href="mailto:cosminbuzamat3@gmail.com">cosminbuzamat3@gmail.com</a></p>
-                    <p class="h6">Phone Number: <a href="tel:+393889551510">+393889551510</a></p>
-                </section>
-            </div>
-            <div class="text-center p-2 text-dark">
-                © 2024 Copyright: <a class="text-dark" id="username" href="https://github.com/Cos592">Cosmin Andrei
-                    Buzamat</a><br>
-            </div>
-        </footer>
     </div>
+
+    <!-- FIRST SECTION ENDS HERE -->
+
+
+
+    <div class="spacer"></div>
+
+
+    <footer class="text-center text-grey mt-auto">
+        <div class="container p-4 text-dark">
+            <section class="mb-4">
+                <a href="https://github.com/Cos592"><i class="fa-brands fa-github socials"></i></a>
+                <a href="https://www.instagram.com/cosmin_buzamat/"><i class="fa-brands fa-instagram socials"></i></a>
+                <a href="https://www.linkedin.com/in/cosmin-andrei-buzamat-729511192/"><i
+                        class="fa-brands fa-linkedin socials"></i></a>
+            </section>
+            <section class="mb-4">
+                <p class="h6">Email: <a href="mailto:cosminbuzamat3@gmail.com">cosminbuzamat3@gmail.com</a></p>
+                <p class="h6">Phone Number: <a href="tel:+393889551510">+393889551510</a></p>
+            </section>
+        </div>
+        <div class="text-center p-2 text-dark">
+            © 2024 Copyright: <a class="text-dark" id="username" href="https://github.com/Cos592">Cosmin Andrei
+                Buzamat</a><br>
+        </div>
+    </footer>
+    </div>
+
 </body>
 
 </html>
